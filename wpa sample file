@@ -1,0 +1,30 @@
+
+##############################
+#          sample            #
+#    wpa_supplicant file     #
+# raspberry pi WiFi settings #
+#                            #
+##############################
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=UK
+
+network={
+	ssid="router1"
+	psk="password1"
+	priority=10
+}
+
+network={
+	ssid="router2"
+	psk="password2"
+	priority=100
+}
+
+network={
+	ssid="PhoneHotSpot"
+	psk="password3"
+	priority=90
+}
+
